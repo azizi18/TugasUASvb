@@ -22,6 +22,7 @@ Partial Class Finputabsen
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Finputabsen))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -47,6 +48,7 @@ Partial Class Finputabsen
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Text_izin = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.btn_update = New System.Windows.Forms.Button()
         CType(Me.DGVsis, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -145,6 +147,7 @@ Partial Class Finputabsen
         'DGVsis
         '
         Me.DGVsis.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGVsis.GridColor = System.Drawing.Color.Gray
         Me.DGVsis.Location = New System.Drawing.Point(60, 279)
         Me.DGVsis.Name = "DGVsis"
         Me.DGVsis.Size = New System.Drawing.Size(526, 147)
@@ -152,46 +155,50 @@ Partial Class Finputabsen
         '
         'Btn_tambah
         '
-        Me.Btn_tambah.BackColor = System.Drawing.Color.Peru
+        Me.Btn_tambah.BackColor = System.Drawing.Color.White
+        Me.Btn_tambah.BackgroundImage = CType(resources.GetObject("Btn_tambah.BackgroundImage"), System.Drawing.Image)
+        Me.Btn_tambah.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Btn_tambah.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Btn_tambah.Location = New System.Drawing.Point(60, 243)
+        Me.Btn_tambah.Location = New System.Drawing.Point(66, 239)
         Me.Btn_tambah.Name = "Btn_tambah"
-        Me.Btn_tambah.Size = New System.Drawing.Size(58, 23)
+        Me.Btn_tambah.Size = New System.Drawing.Size(68, 30)
         Me.Btn_tambah.TabIndex = 12
-        Me.Btn_tambah.Text = "Tambah"
         Me.Btn_tambah.UseVisualStyleBackColor = False
         '
         'Btn_hapus
         '
-        Me.Btn_hapus.BackColor = System.Drawing.Color.Peru
+        Me.Btn_hapus.BackColor = System.Drawing.Color.White
+        Me.Btn_hapus.BackgroundImage = CType(resources.GetObject("Btn_hapus.BackgroundImage"), System.Drawing.Image)
+        Me.Btn_hapus.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Btn_hapus.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Btn_hapus.Location = New System.Drawing.Point(147, 243)
+        Me.Btn_hapus.Location = New System.Drawing.Point(152, 238)
         Me.Btn_hapus.Name = "Btn_hapus"
-        Me.Btn_hapus.Size = New System.Drawing.Size(56, 23)
+        Me.Btn_hapus.Size = New System.Drawing.Size(69, 31)
         Me.Btn_hapus.TabIndex = 13
-        Me.Btn_hapus.Text = "Hapus"
         Me.Btn_hapus.UseVisualStyleBackColor = False
         '
         'Btn_upgrade
         '
-        Me.Btn_upgrade.BackColor = System.Drawing.Color.Peru
+        Me.Btn_upgrade.BackColor = System.Drawing.Color.White
+        Me.Btn_upgrade.BackgroundImage = CType(resources.GetObject("Btn_upgrade.BackgroundImage"), System.Drawing.Image)
+        Me.Btn_upgrade.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Btn_upgrade.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Btn_upgrade.Location = New System.Drawing.Point(230, 243)
+        Me.Btn_upgrade.Location = New System.Drawing.Point(354, 238)
         Me.Btn_upgrade.Name = "Btn_upgrade"
-        Me.Btn_upgrade.Size = New System.Drawing.Size(58, 23)
+        Me.Btn_upgrade.Size = New System.Drawing.Size(79, 29)
         Me.Btn_upgrade.TabIndex = 15
-        Me.Btn_upgrade.Text = "Upgrade"
         Me.Btn_upgrade.UseVisualStyleBackColor = False
         '
         'Btn_closesis
         '
-        Me.Btn_closesis.BackColor = System.Drawing.Color.Peru
+        Me.Btn_closesis.BackColor = System.Drawing.Color.White
+        Me.Btn_closesis.BackgroundImage = CType(resources.GetObject("Btn_closesis.BackgroundImage"), System.Drawing.Image)
+        Me.Btn_closesis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Btn_closesis.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Btn_closesis.Location = New System.Drawing.Point(523, 238)
+        Me.Btn_closesis.Location = New System.Drawing.Point(523, 243)
         Me.Btn_closesis.Name = "Btn_closesis"
         Me.Btn_closesis.Size = New System.Drawing.Size(63, 23)
         Me.Btn_closesis.TabIndex = 16
-        Me.Btn_closesis.Text = "Close"
         Me.Btn_closesis.UseVisualStyleBackColor = False
         '
         'Label8
@@ -199,9 +206,9 @@ Partial Class Finputabsen
         Me.Label8.AutoSize = True
         Me.Label8.Location = New System.Drawing.Point(334, 83)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(35, 13)
+        Me.Label8.Size = New System.Drawing.Size(56, 13)
         Me.Label8.TabIndex = 20
-        Me.Label8.Text = "No.tlp"
+        Me.Label8.Text = "No.tlp ortu"
         '
         'Text_notlp
         '
@@ -275,12 +282,25 @@ Partial Class Finputabsen
         Me.Label7.TabIndex = 11
         Me.Label7.Text = "Izin"
         '
+        'btn_update
+        '
+        Me.btn_update.BackColor = System.Drawing.Color.White
+        Me.btn_update.BackgroundImage = CType(resources.GetObject("btn_update.BackgroundImage"), System.Drawing.Image)
+        Me.btn_update.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btn_update.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btn_update.Location = New System.Drawing.Point(252, 239)
+        Me.btn_update.Name = "btn_update"
+        Me.btn_update.Size = New System.Drawing.Size(75, 27)
+        Me.btn_update.TabIndex = 23
+        Me.btn_update.UseVisualStyleBackColor = False
+        '
         'Finputabsen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.MintCream
         Me.ClientSize = New System.Drawing.Size(632, 428)
+        Me.Controls.Add(Me.btn_update)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Text_notlp)
         Me.Controls.Add(Me.Label8)
@@ -298,7 +318,9 @@ Partial Class Finputabsen
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Finputabsen"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Fabsensi"
         CType(Me.DGVsis, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
@@ -332,4 +354,5 @@ Partial Class Finputabsen
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents Text_izin As System.Windows.Forms.TextBox
     Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents btn_update As System.Windows.Forms.Button
 End Class

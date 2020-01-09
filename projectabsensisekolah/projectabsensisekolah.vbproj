@@ -12,6 +12,22 @@
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <PublishUrl>C:\Users\Zaidun\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -45,6 +61,18 @@
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>A2413316B247EF6860FE5C4CB4D19AD6B77EAD89</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>projectabsensisekolah_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -70,16 +98,16 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Fabout.Designer.vb">
+      <DependentUpon>Fabout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fabout.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Finputabsen.Designer.vb">
       <DependentUpon>Finputabsen.vb</DependentUpon>
     </Compile>
     <Compile Include="Finputabsen.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Fabsensiswa.Designer.vb">
-      <DependentUpon>Fabsensiswa.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Fabsensiswa.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Flogin.vb">
@@ -101,6 +129,12 @@
     <Compile Include="Freguser.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Fviewabsen.Designer.vb">
+      <DependentUpon>Fviewabsen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Fviewabsen.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Modulekoneksi.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -119,8 +153,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Fabsensiswa.resx">
-      <DependentUpon>Fabsensiswa.vb</DependentUpon>
+    <EmbeddedResource Include="Fabout.resx">
+      <DependentUpon>Fabout.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Finputabsen.resx">
       <DependentUpon>Finputabsen.vb</DependentUpon>
@@ -133,6 +167,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Freguser.resx">
       <DependentUpon>Freguser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fviewabsen.resx">
+      <DependentUpon>Fviewabsen.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -152,6 +189,24 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="projectabsensisekolah_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

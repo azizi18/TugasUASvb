@@ -177,4 +177,9 @@ Public Class Finputabsen
     Private Sub Btn_upgrade_Click(sender As Object, e As EventArgs) Handles Btn_upgrade.Click
         bersihkan()
     End Sub
+
+    Private Sub btn_update_Click(sender As Object, e As EventArgs) Handles btn_update.Click
+        bersihkan()
+        DBbaru = True
+    End Sub
 End Class

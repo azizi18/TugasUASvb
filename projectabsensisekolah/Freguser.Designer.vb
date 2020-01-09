@@ -22,6 +22,7 @@ Partial Class Freguser
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Freguser))
         Me.DGVdatuser = New System.Windows.Forms.DataGridView()
         Me.Btn_update = New System.Windows.Forms.Button()
         Me.Btn_simpan = New System.Windows.Forms.Button()
@@ -39,60 +40,67 @@ Partial Class Freguser
         Me.Text_username = New System.Windows.Forms.TextBox()
         Me.Text_Nama = New System.Windows.Forms.TextBox()
         Me.Btn_kembali = New System.Windows.Forms.Button()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.DGVdatuser, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DGVdatuser
         '
         Me.DGVdatuser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGVdatuser.Location = New System.Drawing.Point(21, 183)
+        Me.DGVdatuser.Location = New System.Drawing.Point(21, 289)
         Me.DGVdatuser.Name = "DGVdatuser"
-        Me.DGVdatuser.Size = New System.Drawing.Size(451, 114)
+        Me.DGVdatuser.Size = New System.Drawing.Size(451, 107)
         Me.DGVdatuser.TabIndex = 0
         '
         'Btn_update
         '
-        Me.Btn_update.BackColor = System.Drawing.Color.Peru
+        Me.Btn_update.BackColor = System.Drawing.Color.White
+        Me.Btn_update.BackgroundImage = CType(resources.GetObject("Btn_update.BackgroundImage"), System.Drawing.Image)
+        Me.Btn_update.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Btn_update.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Btn_update.Location = New System.Drawing.Point(21, 142)
+        Me.Btn_update.Location = New System.Drawing.Point(207, 244)
         Me.Btn_update.Name = "Btn_update"
         Me.Btn_update.Size = New System.Drawing.Size(63, 23)
         Me.Btn_update.TabIndex = 1
-        Me.Btn_update.Text = "Update"
         Me.Btn_update.UseVisualStyleBackColor = False
         '
         'Btn_simpan
         '
-        Me.Btn_simpan.BackColor = System.Drawing.Color.Peru
+        Me.Btn_simpan.BackColor = System.Drawing.Color.White
+        Me.Btn_simpan.BackgroundImage = CType(resources.GetObject("Btn_simpan.BackgroundImage"), System.Drawing.Image)
+        Me.Btn_simpan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Btn_simpan.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Btn_simpan.Location = New System.Drawing.Point(107, 142)
+        Me.Btn_simpan.Location = New System.Drawing.Point(21, 244)
         Me.Btn_simpan.Name = "Btn_simpan"
         Me.Btn_simpan.Size = New System.Drawing.Size(69, 23)
         Me.Btn_simpan.TabIndex = 2
-        Me.Btn_simpan.Text = "Simpan"
         Me.Btn_simpan.UseVisualStyleBackColor = False
         '
         'Btn_bersih
         '
-        Me.Btn_bersih.BackColor = System.Drawing.Color.Peru
+        Me.Btn_bersih.BackColor = System.Drawing.Color.White
+        Me.Btn_bersih.BackgroundImage = CType(resources.GetObject("Btn_bersih.BackgroundImage"), System.Drawing.Image)
+        Me.Btn_bersih.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Btn_bersih.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Btn_bersih.Location = New System.Drawing.Point(202, 142)
+        Me.Btn_bersih.Location = New System.Drawing.Point(292, 244)
         Me.Btn_bersih.Name = "Btn_bersih"
         Me.Btn_bersih.Size = New System.Drawing.Size(68, 23)
         Me.Btn_bersih.TabIndex = 3
-        Me.Btn_bersih.Text = "Bersih"
         Me.Btn_bersih.UseVisualStyleBackColor = False
         '
         'Btn_hapus
         '
-        Me.Btn_hapus.BackColor = System.Drawing.Color.Peru
+        Me.Btn_hapus.BackColor = System.Drawing.Color.White
+        Me.Btn_hapus.BackgroundImage = CType(resources.GetObject("Btn_hapus.BackgroundImage"), System.Drawing.Image)
+        Me.Btn_hapus.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Btn_hapus.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Btn_hapus.Location = New System.Drawing.Point(412, 142)
+        Me.Btn_hapus.Location = New System.Drawing.Point(111, 244)
         Me.Btn_hapus.Name = "Btn_hapus"
-        Me.Btn_hapus.Size = New System.Drawing.Size(60, 23)
+        Me.Btn_hapus.Size = New System.Drawing.Size(65, 23)
         Me.Btn_hapus.TabIndex = 4
-        Me.Btn_hapus.Text = "Hapus"
         Me.Btn_hapus.UseVisualStyleBackColor = False
         '
         'Label1
@@ -143,7 +151,7 @@ Partial Class Freguser
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Location = New System.Drawing.Point(21, 6)
+        Me.GroupBox1.Location = New System.Drawing.Point(21, 99)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(451, 129)
         Me.GroupBox1.TabIndex = 9
@@ -196,21 +204,44 @@ Partial Class Freguser
         '
         'Btn_kembali
         '
-        Me.Btn_kembali.BackColor = System.Drawing.Color.Peru
+        Me.Btn_kembali.BackColor = System.Drawing.Color.White
+        Me.Btn_kembali.BackgroundImage = CType(resources.GetObject("Btn_kembali.BackgroundImage"), System.Drawing.Image)
+        Me.Btn_kembali.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Btn_kembali.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Btn_kembali.Location = New System.Drawing.Point(307, 142)
+        Me.Btn_kembali.Location = New System.Drawing.Point(411, 244)
         Me.Btn_kembali.Name = "Btn_kembali"
-        Me.Btn_kembali.Size = New System.Drawing.Size(68, 23)
+        Me.Btn_kembali.Size = New System.Drawing.Size(60, 23)
         Me.Btn_kembali.TabIndex = 10
-        Me.Btn_kembali.Text = "Kembali"
         Me.Btn_kembali.UseVisualStyleBackColor = False
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Modern No. 20", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(176, 9)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(138, 21)
+        Me.Label6.TabIndex = 11
+        Me.Label6.Text = " INPUT USER"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(193, 40)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(100, 50)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 12
+        Me.PictureBox1.TabStop = False
         '
         'Freguser
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.MintCream
-        Me.ClientSize = New System.Drawing.Size(487, 309)
+        Me.ClientSize = New System.Drawing.Size(487, 408)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Btn_kembali)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Btn_hapus)
@@ -218,13 +249,16 @@ Partial Class Freguser
         Me.Controls.Add(Me.Btn_simpan)
         Me.Controls.Add(Me.Btn_update)
         Me.Controls.Add(Me.DGVdatuser)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Freguser"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "User"
         CType(Me.DGVdatuser, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
     Friend WithEvents DGVdatuser As System.Windows.Forms.DataGridView
@@ -244,4 +278,6 @@ Partial Class Freguser
     Friend WithEvents Text_leveluser As System.Windows.Forms.TextBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Btn_kembali As System.Windows.Forms.Button
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
 End Class

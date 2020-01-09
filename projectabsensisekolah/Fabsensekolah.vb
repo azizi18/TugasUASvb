@@ -48,8 +48,7 @@
     End Sub
 
     Private Sub LihatAbsenToolStripMenuItem_Click(sender As Object, e As EventArgs)
-        Fabsensiswa.Show()
-        Me.Hide()
+       
     End Sub
 
     Private Sub ExitToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles Mi_user.Click
@@ -59,7 +58,8 @@
     End Sub
 
     Private Sub IdentitasSekolahToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Mi_laporkehdiran.Click
-
+        Fviewabsen.Show()
+        Me.Hide()
     End Sub
 
     Private Sub LogOutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles Mi_login.Click
@@ -88,5 +88,14 @@
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         Slabel10.Text = TimeOfDay
+    End Sub
+
+    Private Sub Ms_utility_Click(sender As Object, e As EventArgs) Handles Ms_utility.Click
+        Fabout.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Mi_about_Click(sender As Object, e As EventArgs)
+       
     End Sub
 End Class

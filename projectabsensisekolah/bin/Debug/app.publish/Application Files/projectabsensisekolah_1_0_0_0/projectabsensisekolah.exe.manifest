@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="projectabsensisekolah.exe" version="1.0.0.0" publicKeyToken="0117951a58ef3c30" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="projectabsensisekolah" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="projectabsensisekolah.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="projectabsensisekolah.exe" size="620032">
+      <assemblyIdentity name="projectabsensisekolah" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>mpgtcvbRKmZa0RIpfN0cGQ2dta3YRvBo3pzZojAWOVQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="projectabsensisekolah.exe.config" size="186">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>h0UeIdteCM29dGVw07LmHp593fPbh0IN11GyN3f2uRA=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=Zaidun-PC\Zaidun" issuerKeyHash="d54fdea7bdf6c9f9a5680aaa75ec6e3c0459689f" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>Jau8FAMK0P2UXQf7gf4S280sjWl0kSutVoTNPaTii94=</DigestValue></Reference></SignedInfo><SignatureValue>Tf24M3C9IMf3nyI3pteY3YKh9r/TtI5CfQQ3pelvtr413qj+0T+6+2oPLwAoIibWilwTdNW2CWA3cscKAOnOENY3wzkff0KX6X6Q+EvyoZvEAAFA+/Q7UHLhxXcG1zQCBtS0c5iZ2d09D2p3KtO8kEOhv1Zus5kdxbmggCShXaw=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>zEeq0RzZ1QhU8i45GBcW37jYNds4/YgcRSUuYEkRFxSn7KDoJbmWtA2LxmIV9CvEpc4CGi4LLaAlj6/dy2+hFMTD8WRZnFixb8XT6I6lsnRlDcD7erDr8OkuU8C7bDyi/d7sH0HdwsxlGNxm4Hr8DOnhc7vHnIzMq4fSbACTGSU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="de8be2a43dcd8456ad2b9174698d2ccddb12fe81fb075d94fdd00a0314bcab25" Description="" Url=""><as:assemblyIdentity name="projectabsensisekolah.exe" version="1.0.0.0" publicKeyToken="0117951a58ef3c30" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Zaidun-PC\Zaidun</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>kus7HdTNqIOxpxy56Fc+8/1d+fR0nuo3A16FIkRI26k=</DigestValue></Reference></SignedInfo><SignatureValue>TnOaMAxgtHhgNOYanUK5fHvgVa/yHy3LwueRhPHI3c1IcnvsgXbF4i6GrK0o1W2ZS8GvfNY0HfSxvLsT5EjDzWLuhdWEtY8IOONAQ66QOtsqcXO3nn9EvRx8pFD5f4lReDJ5n2gc1wiq4hfL2MAJwlDadv1617TkCMBgNH0bTME=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>zEeq0RzZ1QhU8i45GBcW37jYNds4/YgcRSUuYEkRFxSn7KDoJbmWtA2LxmIV9CvEpc4CGi4LLaAlj6/dy2+hFMTD8WRZnFixb8XT6I6lsnRlDcD7erDr8OkuU8C7bDyi/d7sH0HdwsxlGNxm4Hr8DOnhc7vHnIzMq4fSbACTGSU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB2TCCAUKgAwIBAgIQIrFDzth3Eb9E1WeaEtsFlTANBgkqhkiG9w0BAQsFADArMSkwJwYDVQQDHiAAWgBhAGkAZAB1AG4ALQBQAEMAXABaAGEAaQBkAHUAbjAeFw0yMDAxMDgyMTAzMTlaFw0yMTAxMDgwMzAzMTlaMCsxKTAnBgNVBAMeIABaAGEAaQBkAHUAbgAtAFAAQwBcAFoAYQBpAGQAdQBuMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDMR6rRHNnVCFTyLjkYFxbfuNg12zj9iBxFJS5gSREXFKfsoOgluZa0DYvGYhX0K8SlzgIaLgstoCWPr93Lb6EUxMPxZFmcWLFvxdPojqWydGUNwPt6sOvw6S5TwLtsPKL93uwfQd3CzGUY3GbgevwM6eFzu8ecjMyrh9JsAJMZJQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAJLKSyRysu2/86OhahBHGM1jIQoa2pO9RBqOdUKz3MwMvEeYczaN4qbQWFEu4ni86Z6IIKuTEa0CgGQfQgTW8G6XstDgQBvP1hXISrBKI+adSVXJTiH2AqLL7JR/XZtdevZstqCvKhj7BffgyYrtw5yE9wVAPeJyxd1IDhoLw7mL</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

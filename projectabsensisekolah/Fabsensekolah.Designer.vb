@@ -23,6 +23,7 @@ Partial Class FAbsensekolah
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FAbsensekolah))
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.Ms_file = New System.Windows.Forms.ToolStripMenuItem()
         Me.Mi_login = New System.Windows.Forms.ToolStripMenuItem()
@@ -35,7 +36,6 @@ Partial Class FAbsensekolah
         Me.Ms_laporan = New System.Windows.Forms.ToolStripMenuItem()
         Me.Mi_laporkehdiran = New System.Windows.Forms.ToolStripMenuItem()
         Me.Ms_utility = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Mi_about = New System.Windows.Forms.ToolStripMenuItem()
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.Slabel1 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.Slabel2 = New System.Windows.Forms.ToolStripStatusLabel()
@@ -54,18 +54,20 @@ Partial Class FAbsensekolah
         '
         'MenuStrip1
         '
+        Me.MenuStrip1.BackColor = System.Drawing.Color.Turquoise
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Ms_file, Me.Ms_menu, Me.Ms_laporan, Me.Ms_utility})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(519, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(566, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'Ms_file
         '
         Me.Ms_file.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Mi_login, Me.Mi_logout, Me.ToolStripMenuItem1, Me.Mi_user, Me.Mi_exit})
+        Me.Ms_file.Image = CType(resources.GetObject("Ms_file.Image"), System.Drawing.Image)
         Me.Ms_file.Name = "Ms_file"
-        Me.Ms_file.Size = New System.Drawing.Size(37, 20)
+        Me.Ms_file.Size = New System.Drawing.Size(53, 20)
         Me.Ms_file.Text = "File"
         '
         'Mi_login
@@ -107,41 +109,35 @@ Partial Class FAbsensekolah
         'Mi_abssiswa
         '
         Me.Mi_abssiswa.Name = "Mi_abssiswa"
-        Me.Mi_abssiswa.Size = New System.Drawing.Size(147, 22)
+        Me.Mi_abssiswa.Size = New System.Drawing.Size(152, 22)
         Me.Mi_abssiswa.Text = "Absensi Siswa"
         '
         'Ms_laporan
         '
         Me.Ms_laporan.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Mi_laporkehdiran})
         Me.Ms_laporan.Name = "Ms_laporan"
-        Me.Ms_laporan.Size = New System.Drawing.Size(62, 20)
-        Me.Ms_laporan.Text = "Laporan"
+        Me.Ms_laporan.Size = New System.Drawing.Size(44, 20)
+        Me.Ms_laporan.Text = "View"
         '
         'Mi_laporkehdiran
         '
         Me.Mi_laporkehdiran.Name = "Mi_laporkehdiran"
-        Me.Mi_laporkehdiran.Size = New System.Drawing.Size(173, 22)
-        Me.Mi_laporkehdiran.Text = "Laporan Kehadiran"
+        Me.Mi_laporkehdiran.Size = New System.Drawing.Size(158, 22)
+        Me.Mi_laporkehdiran.Text = "Kehadiran siswa"
         '
         'Ms_utility
         '
-        Me.Ms_utility.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Mi_about})
         Me.Ms_utility.Name = "Ms_utility"
-        Me.Ms_utility.Size = New System.Drawing.Size(50, 20)
-        Me.Ms_utility.Text = "Utility"
-        '
-        'Mi_about
-        '
-        Me.Mi_about.Name = "Mi_about"
-        Me.Mi_about.Size = New System.Drawing.Size(105, 22)
-        Me.Mi_about.Text = "about"
+        Me.Ms_utility.Size = New System.Drawing.Size(52, 20)
+        Me.Ms_utility.Text = "About"
         '
         'StatusStrip1
         '
+        Me.StatusStrip1.BackColor = System.Drawing.Color.Honeydew
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Slabel1, Me.Slabel2, Me.Slabel3, Me.Slabel4, Me.Slabel5, Me.Slabel6, Me.Slabel7, Me.Slabel8, Me.Slabel9, Me.Slabel10})
         Me.StatusStrip1.Location = New System.Drawing.Point(0, 253)
         Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(519, 22)
+        Me.StatusStrip1.Size = New System.Drawing.Size(566, 22)
         Me.StatusStrip1.TabIndex = 1
         Me.StatusStrip1.Text = "StatusStrip1"
         '
@@ -219,9 +215,10 @@ Partial Class FAbsensekolah
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.MintCream
-        Me.ClientSize = New System.Drawing.Size(519, 275)
+        Me.ClientSize = New System.Drawing.Size(566, 275)
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "FAbsensekolah"
@@ -249,7 +246,6 @@ Partial Class FAbsensekolah
     Friend WithEvents Mi_exit As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents StatusStrip1 As System.Windows.Forms.StatusStrip
     Friend WithEvents Ms_utility As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents Mi_about As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents Slabel1 As System.Windows.Forms.ToolStripStatusLabel
     Friend WithEvents Slabel2 As System.Windows.Forms.ToolStripStatusLabel
     Friend WithEvents Slabel3 As System.Windows.Forms.ToolStripStatusLabel
